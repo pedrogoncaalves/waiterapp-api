@@ -1,0 +1,11 @@
+{
+  "name": "waiterapp-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pedrogoncaalves/waiterapp-api.git",
+  "author": "Pedro Gonçalves <101778028+pedrogoncaalves@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
