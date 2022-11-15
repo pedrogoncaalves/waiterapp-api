@@ -1,23 +1,20 @@
 // Features
 import { Router } from 'express';
+import { listCategories } from './app/useCases/categories/listCategories';
+import { createCategory } from './app/useCases/categories/createCategories';
+import { listProducts } from './app/useCases/products/listProducts';
 
 export const router = Router();
 
 // List Categories
 
-router.get('/categories', (req,res) => {
-    res.send('OK');
-});
+router.get('/categories', listCategories);
 
 // Create Categories
-router.post('/categories', (req,res) => {
-    res.send('OK');
-});
+router.post('/categories', createCategory);
 
 // List Products
-router.get('products', (req,res) => {
-    res.send('OK');
-});
+router.get('/products', listProducts);
 
 // Create Product
 router.post('/products', (req,res) => {
