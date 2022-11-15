@@ -16,5 +16,20 @@ export const Order = model('Order', new Schema({
             type: Date,
             default: Date.now
         }
+    },
+    products: {
+        required: true,
+        type: [{
+            product: {
+                type: Schema.Types.ObjectId,
+                required: true,
+                ref: 'Category'
+
+            },
+            quantity: {
+                type: Number,
+                default: 1
+            }
+        }]
     }
 }));
